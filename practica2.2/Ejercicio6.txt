@@ -1,0 +1,8 @@
+umask 027 	//Comando umask
+
+//Salida ls-l
+-rw-r----- 1 cursoredes cursoredes    0 Nov 11 18:52 prueba1
+drwxr-x--- 2 cursoredes cursoredes    6 Nov 11 18:52 prueba2
+
+
+	

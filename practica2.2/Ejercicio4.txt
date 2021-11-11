@@ -1,0 +1,3 @@
+mkdir Directorio 	//Para crear un directorio
+chmod 666 Directorio	//Para quitar permisos de ejecución
+bash: cd: Prueba: Permission denied 	//Al intentar acceder al directorio

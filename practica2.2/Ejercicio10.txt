@@ -1,0 +1,23 @@
+/*Con la opción -s, se crea un enlace simbólico. Crear un enlace simbólico a un fichero ordinario y otro a un directorio. 
+Comprobar el resultado con ls -l y ls -i. Determinar el inodo de cada fichero.*/
+
+
+lrwxrwxrwx 1 cursoredes cursoredes   17 Nov 12 18:25 linkdirectorio -> directorioPrueba2
+lrwxrwxrwx 1 cursoredes cursoredes    7 Nov 12 18:25 linkfichero -> fichero
+
+
+/*Repetir el apartado anterior con enlaces rígidos. Determinar los inodos de los ficheros y las propiedades con stat 
+observar el atributo número de enlaces).*/
+
+
+Los inodos de los ficheros son los mismos y el atributo num enlances varía segun el número de enlaces existentes.
+
+
+/*¿Qué sucede cuando se borra uno de los enlaces rígidos? ¿Qué sucede si se borra uno de los enlaces simbólicos? 
+¿Y si se borra el fichero original?*/
+
+Cuando se borra uno de los enlaces rígidos, disminuye el número de enlaces y si llega a 0 se libera el i-nodo
+Cuando se borra un elance simbólico, se elimina el fichero generado en el enlace y se libera el i-nodo.
+Y si se borra el fichero original, se mantiene el enlace pero no se puede acceder al contenido.
+
+

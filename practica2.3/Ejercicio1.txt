@@ -1,0 +1,2 @@
+renice -10 -p <pid>
+chrt -f -p 12 <pid>
